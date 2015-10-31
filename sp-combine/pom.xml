@@ -36,6 +36,8 @@
                         <Embed-Dependency>sp-tc-jar1,sp-tc-jar2</Embed-Dependency>
                         <Export-Package>org.apache.felix.tc</Export-Package>
                     </instructions>
+                    <dumpInstructions>target/combine.bnd</dumpInstructions>
+                    <unpackBundle>true</unpackBundle>
                 </configuration>
             </plugin>
         </plugins>

@@ -1,0 +1,16 @@
+Embed-Dependency=sp-tc-jar1,sp-tc-jar2
+Bundle-DocURL=http\://www.apache.org/
+Bundle-ClassPath=.,sp-tc-jar1-0.0.1-SNAPSHOT.jar,sp-tc-jar2-0.0.1-SNAPSHOT.jar
+Export-Package=org.apache.felix.tc
+Bundle-License=http\://www.apache.org/licenses/LICENSE-2.0.txt
+Include-Resource=sp-tc-jar1-0.0.1-SNAPSHOT.jar\=jars/sp-tc-jar1-0.0.1-SNAPSHOT.jar,sp-tc-jar2-0.0.1-SNAPSHOT.jar\=jars/sp-tc-jar2-0.0.1-SNAPSHOT.jar
+-removeheaders=Include-Resource,Private-Package
+Bundle-SymbolicName=org.apache.felix.sp-tc-combine
+Private-Package=org.apache.felix.combined
+Bundle-Version=0.0.1.SNAPSHOT
+Import-Package=*
+Embedded-Artifacts=sp-tc-jar1-0.0.1-SNAPSHOT.jar;g\="org.apache.felix";a\="sp-tc-jar1";v\="0.0.1-SNAPSHOT",sp-tc-jar2-0.0.1-SNAPSHOT.jar;g\="org.apache.felix";a\="sp-tc-jar2";v\="0.0.1-SNAPSHOT"
+Bundle-Vendor=The Apache Software Foundation
+-sourcepath=../sp-combine/src/main/java
+Bundle-Name=sp-tc-combine
+-classpath: stuff,jars/sp-tc-jar1-0.0.1-SNAPSHOT.jar,jars/sp-tc-jar2-0.0.1-SNAPSHOT.jar
